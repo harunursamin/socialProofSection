@@ -39,7 +39,9 @@ main {
 .rating .heading {
   font-size: 3.5rem;
 }
-
+.testimonial p{
+    font-weight: 500;
+}
 /*  */
 .rating .wrapper {
   height: 100%;
