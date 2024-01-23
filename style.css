@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+main {
+  min-height: 100vh;
+  background: url("./images/bg-pattern-top-desktop.svg") no-repeat,
+    url("./images/bg-pattern-bottom-desktop.svg") bottom left 30vw no-repeat,
+    var(--White);
+  gap: 5rem;
+}
+/* common font styling */
+.rating .drk-mgnta {
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+.rating .lght-mgnta {
+  color: var(--Dark-Grayish-Magenta);
+}
+
+.rating p {
+  font-size: 1.2rem;
+}
+.rating .heading {
+  font-size: 3.5rem;
+}
+
+/*  */
+.rating .wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+}
+.rating .wrapper .text-box {
+  width: 90%;
+  border-radius: 0.5rem;
+  background: var(--Light-Grayish-Magenta);
+}
+.text-box .star,
+.text-box .cmmnt {
+  height: fit-content;
+}
+.rating .wrapper .cmmnt p {
+  margin: 0;
+}
+
+/* reviwes */
+.testimonial .rvw-card .prfl {
+  background: var(--Very-Dark-Magenta);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+}
+.rvw-card .wht {
+  color: var(--White);
+}
+.rvw-card .sft-pnk {
+  color: var(--Soft-Pink);
+}
+
+.prfl .idntty {
+  gap: 1rem;
+}
+.prfl .idntty img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.prfl .idntty .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
